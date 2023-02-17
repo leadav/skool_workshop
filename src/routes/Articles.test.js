@@ -32,7 +32,7 @@ describe('Articles Page', () => {
 
     // THEN
     const articles = screen.getAllByRole('article')
-    expect(articles.length).toStrictEqual(2)
+    expect(articles.length).toStrictEqual(3)
 
     articlesAAfficher.forEach((article, index) => {
       const titreDeLArticle = within(articles[index]).getByRole('heading', { name: article.title })
