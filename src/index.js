@@ -16,19 +16,19 @@ import Publier from "./routes/Publier";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Header/>
-  <main>
-    <Layout>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/weather" element={<Meteo />} />
-        <Route path="/post" element={<Publier />} />
-      </Routes>
-    </Layout>
-  </main>
-  <Footer/>
-</BrowserRouter>
+    <Header />
+    <main>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/articles" element={<Articles articles={[]} />} />
+          <Route path="/weather" element={<Meteo />} />
+          <Route path="/post" element={<Publier />} />
+        </Routes>
+      </Layout>
+    </main>
+    <Footer />
+  </BrowserRouter>
 );
 
 // If you want your app to work offline and load faster, you can change
