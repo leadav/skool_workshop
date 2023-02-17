@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom'
 import Home from './Home';
 
-describe('Home Page', () => {
+describe('Articles Page', () => {
   it('possède un titre de niveau h1', () => {
     render(<Home />, {wrapper: BrowserRouter});
     const titleElement = screen.getByRole('heading', {level: 1, name: 'Bienvenue dans les bases du dev web'})
